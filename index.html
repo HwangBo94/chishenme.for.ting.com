@@ -98,11 +98,23 @@ input,span{
         var clas=['外婆家红烧肉','上汤鸡毛菜','小面','饺子','春饼','回锅肉','小炒肉','虾滑粉丝',
          '鲜肉馄饨', '永和大王', '炸鸡排', 'KFC', '麦当劳', '榴莲披萨' ,'麻婆抄手', '学校食堂',
          '粥', '泡面', '卤肉饭', '麻辣香锅', '炸鸡', '桃屋', '呷哺呷吃呷涮']
+
+		 var countnum=0
 	    
         function Calc() {
-            var selectednum=clas.length;
-            var x=Math.floor(Math.random()*(selectednum));
-            document.getElementById("Text").value = clas[x];
+
+			if (countnum<8)
+			{
+				var selectednum=clas.length;
+				var x=Math.floor(Math.random()*(selectednum));
+				document.getElementById("Text").value = clas[x];
+				countnum=countnum+1
+			}
+			else
+			{
+				alert("这么作？今天别吃了!");
+			}
+            
         }
         </script>
 </div>
