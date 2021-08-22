@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>吃饭选择网</title>
+<title>拯救吃饭选择困难症患者</title>
 
 <style type="text/css">
 
@@ -100,6 +100,18 @@ input,span{
          '粥', '泡面', '卤肉饭', '麻辣香锅', '炸鸡', '桃屋', '呷哺呷吃呷涮']
 
 		 var countnum=0;
+
+		 (function(){
+			window.alert = function(name){
+			var iframe = document.createElement("IFRAME");
+			iframe.style.display="none";
+			iframe.setAttribute("src", 'data:text/plain');
+			document.documentElement.appendChild(iframe);
+			window.frames[0].window.alert(name);
+			iframe.parentNode.removeChild(iframe);
+			}
+			})();
+
 	    
         function Calc() {
 
