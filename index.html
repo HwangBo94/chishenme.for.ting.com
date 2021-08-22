@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>吃饭选择网</title>
+
+<style type="text/css">
+
+body{ background: #3a4954}
+#tagbox{position:relative;margin:20px auto 0px;width:600px;height:500px;background:#3a4954;}
+#tagbox a{position:absolute;padding:3px 6px;font-family:Microsoft YaHei;color:#fff;TOP:0px;font-weight:bold;text-decoration:none;left:0px}
+#tagbox a:hover{border:#eee 1px solid;background:#000;}
+#tagbox .blue{color:blue}
+#tagbox .red{color:red}
+#tagbox .yellow{color:yellow}
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<div id="tagbox">
+	<a href="#">外婆家红烧肉</a> 
+	<a class="red" href="#">上汤鸡毛菜</a> 
+	<a href="#">小面</a> 
+	<a href="#">饺子</a> 
+	<a class="blue" href="#">春饼</a> 
+	<a href="#">回锅肉</a> 
+	<a class="red" href="#">小炒肉</a> 
+	<a class="yellow" href="#">虾滑粉丝</a> 
+	<a href="#">鲜肉馄饨</a> 
+	<a class="red" href="#">永和大王</a> 
+	<a href="#">炸鸡排</a> 
+	<a class="blue" href="#">KFC</a> 
+	<a class="blue" href="#">麦当劳</a>
+	<a class="red" href="#">榴莲披萨</a> 
+	<a class="yellow" href="#">麻婆抄手</a>
+	<a class="yellow" href="#">学校食堂</a> 
+	<a class="blue" href="#">粥</a>
+	<a class="yellow" href="#">泡面</a>
+	<a class="blue" href="#">卤肉饭</a> 
+	<a class="blue" href="#">麻辣香锅</a> 
+	<a class="red" href="#">炸鸡</a> 
+	<a href="#">桃屋</a> 
+	<a href="#">呷哺呷吃呷涮</a> 
+	<a class="yellow" href="#">外婆家红烧肉</a> 
+	<a href="#">上汤鸡毛菜</a> 
+	<a href="#">小面</a> 
+	<a class="blue" href="#">饺子</a> 
+	<a class="red" href="#">春饼</a> 
+	<a class="red" href="#">回锅肉</a> 
+	<a class="blue" href="#">小炒肉</a> 
+	<a href="#">虾滑粉丝</a> 
+	<a class="blue" href="#">鲜肉馄饨</a> 
+	<a class="blue" href="#">永和大王</a> 
+	<a href="#">炸鸡排</a> 
+	<a href="#">KFC</a> 
+	<a href="#">麦当劳</a> 
+	<a ref="#">榴莲披萨</a> 
+	<a href="#">麻婆抄手</a> 
+	<a href="#">学校食堂</a> 
+	<a class="red" href="#">粥</a> 
+	<a class="yellow" href="#">泡面</a> 
+	<a class="yellow" href="#">卤肉饭</a> 
+	<a class="yellow" href="#">麻辣香锅</a> 
+</div>
+<div style="text-align:center; padding-top:30px;">
+
+
+    <tr><input type="button" style="font-size: 50px; text-align:center;" value="中午吃什么！！！" onclick="Calc()" /></tr>
+    <br>
+    <tr><input type="text" style="font-size: 50px; text-align:center;" size="10" id="Text" value="None" /></tr>
+    
+        <script type="text/javascript">
+        //var clas=['馄饨','拉面','热干面','刀削面','油泼面','炸酱面','炒面','重庆小面',
+        // '米线', '酸辣粉', '土豆粉', '螺狮粉', '凉皮儿', '麻辣烫' ,'肉夹馍', '羊肉汤',
+        // '炒饭', '盖浇饭', '卤肉饭', '烤肉饭', '黄焖鸡米饭', '驴肉火烧', '川菜', '麻辣香锅',
+        // '火锅', '酸菜鱼', '烤串', '披萨', '烤鸭', '汉堡', '炸鸡', '寿司', '蟹黄包', '煎饼果子', '生煎', '炒年糕',
+        // '不吃','学校食堂','桂花糕','虾饺','二锅头','泡面','粥'];
+
+        var clas=['外婆家红烧肉','上汤鸡毛菜','小面','饺子','春饼','回锅肉','小炒肉','虾滑粉丝',
+         '鲜肉馄饨', '永和大王', '炸鸡排', 'KFC', '麦当劳', '榴莲披萨' ,'麻婆抄手', '学校食堂',
+         '粥', '泡面', '卤肉饭', '麻辣香锅', '炸鸡', '桃屋', '呷哺呷吃呷涮']
+	    
+        function Calc() {
+            var selectednum=clas.length;
+            var x=Math.floor(Math.random()*(selectednum));
+            document.getElementById("Text").value = clas[x];
+        }
+        </script>
+</div>
+</body>
+</html>
+
